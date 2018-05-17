@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Shopping Lists with JavaScript</title>
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class ="input_form">
+				<h1>Input items to display!</h1>
+					<section class="add_items">
+						<label>Items:</label> <input type="text" name= "item" id= "item">
+						<label>Quantity: </label><input type="text" name="quantity" id="quantity">
+						<button class="btn" onclick="addItems()">Add Items</button>
+					</section>
+			</div>
+			<div class ="list_items">
+				<h1>Lists all the items here!</h1>
+						<table border="0" id ="myTable">
+						<tr align="left"><th>Check Items</th><th>Item Name</th><th>Quantity</th><th>Action</th></tr>
+							<tr>
+								<td><input type="checkbox" id ="itemCheck" name="check-tab1" onclick="doneItems()" autocomplete="off"></td>
+								<td>Laptop</td>
+								<td>5</td>
+								<td><button onclick="deleteItems(this)" >Remove</button></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id ="itemCheck" name="check-tab1" onclick="doneItems()" autocomplete="off"></td>
+								<td>Mobile</td>
+								<td>5</td>
+								<td><button onclick="deleteItems(this)">Remove</button></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id ="itemCheck" name="check-tab1" onclick="doneItems()" autocomplete="off"></td>
+								<td>TV</td>
+								<td>5</td>
+								<td><button onclick="deleteItems(this)">Remove</button></td>
+							</tr>
+						</table>
+			</div>
+			<div class ="final_items">
+			<h1>Items that have been checked already!</h1>
+			<table border="0" id ="myTable2">	
+				<tr align="left"><th>Check Items</th><th>Item Name</th><th>Quantity</th><th>Action</th></tr>
+			</table>		
+			</div>
+		</div>
+		 <script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

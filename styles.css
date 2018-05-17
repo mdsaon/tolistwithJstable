@@ -1,0 +1,95 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark:#C1C1C1;
+  --light:#FFFFFF;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body{
+  background-color: #FCFCFC;
+  line-height: 1.4;
+
+}
+.btn {
+  background: #010101;
+  color: #FFFFFF;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  grid-column:3/4;
+  position: absolute;
+  left: 800px;
+  
+}
+.wrapper{
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  width: 80%;
+  text-align: center;
+  margin: 0px auto;
+}
+.input_form{
+ display: grid;
+ text-align: center;
+ background-color:#d6d6c2;
+ height: 200px;
+}
+.add_items{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+}
+.add_items input{
+  grid-column:2/3;
+  background-color: transparent;
+  color: black;
+  border:solid #6D747E 1px;
+  width: 200px;
+  height: 30px;
+  align-items: left;
+}
+.add_items label{
+  grid-column:1/2;
+  font-family: verdana;
+  font-size: 20px;
+}
+.list_items{
+background-color: #ffe6cc;
+
+
+}
+table{
+width: 100%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+td,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd){
+  background-color:   #b3d9ff;
+}
+
+.final_items{
+
+background-color:#d6d6c2;
+}
+.overflow{
+  max-height: 40px;
+  overflow: hidden;
+}
